@@ -1,0 +1,89 @@
+body {
+    font-family: Ubuntu;
+}
+
+
+/* Каталог товаров */
+
+.good-item {
+    margin: 10px 0;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.good-item__id {
+    padding-top: 30px;
+    color: steelblue;
+    font-size: 16px;
+    font-family: 'Grand Hotel', cursive;
+}
+
+.good-item__name {
+    padding-top: 10px;
+    font-size: 1.1em;
+    font-family: 'Grand Hotel', cursive;
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.good-item__price {
+    padding-top: 10px;
+    color: #ffc200;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: 'Grand Hotel', cursive;
+}
+
+.good-item__btn-add {
+    margin-top: 30px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    font-size: 15;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #ffc200;
+    text-transform: uppercase;
+    border-radius:5px;
+    color: #303030;
+    transition: .1s linear;
+}
+
+.good-item__btn-add:hover {
+    background-color: #fce38a;
+}
+
+.poin_container {
+    border: 3px solid #fce38a; 
+    width: 340px;
+    height: 500px;
+    padding-bottom: 35px;
+    border-radius: 1rem;
+    background-color: #303030;
+    margin-top: 30px;
+  }
+  
+  .good-item__img{
+    width: 280px; 
+    height: 190px; 
+   
+    border-radius: 30%;
+  }
+
+
+/* Корзина */
+
+.cart-item__btn-dec-count {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cart-item__btn-inc-count {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cart-item__btn-remove {
+    cursor: pointer;
+}
