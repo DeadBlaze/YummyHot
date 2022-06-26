@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffc200;
+}
+
+*,
+*:before
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 ,h5 ,h6 {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1630px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
+
+/* Intro */
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 842px;
+
+    background: url("../images_menu/menu_intro.jpg")
+    center
+    no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro_inner {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 45% auto;
+}
+
+.intro_title {
+    font-size: 95px;
+    max-width: 660px;
+     font-weight: 700;  
+     text-align: center; 
+     color: #ffc200;
+     line-height: 1.1;
+     font-family: 'Grand Hotel', cursive;
+     margin-top: -250px;
+     margin-left: -250px;
+    
+     
+ }
+/*Header*/
+
+.header {
+    width: 100%;
+    padding-top: 38px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_logo {
+    font-size: 40px;
+    font-family: 'Grand Hotel', cursive;
+    font-weight: 700;
+    color: #ffc200
+}
+
+.nav_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nav */
+.nav {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 30px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.nav_link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s liner;
+}
+
+.nav_link:hover {
+    color: #fce38a;
+}
+
+.nav_link:hover::after {
+    opacity: 1;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    width: 100%;
+    background-color: #ffc200;
+    border-bottom:3px solid #fce38a;
+    border-top:3px solid #fce38a;
+  
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.navbar_nav {
+    padding: 0;
+    font-size: 30px;
+    margin: 0;
+    list-style-type: none;
+    
+  }
+
+  .navbar_nav li {
+    display: inline-block;
+    padding: 15px 20px;
+ 
+  }
+
+  .navbar_nav li a {
+    padding: 38px;
+    color: #fff;
+  
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.09s ease-out;
+    font-family: 'Grand Hotel', cursive;
+  }
+
+
+  .navbar_nav li a:hover {
+    opacity: 0.7;
+  }
+
+  
+/* Корзина */
+
+.cart-item__btn-dec-count {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cart-item__btn-inc-count {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cart-item__btn-remove {
+    cursor: pointer;
+}
+
+
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.glyphicon-minus:before{content:"\2212"}
+
+.glyphicon-plus:before{content:"\2b"}
+
+.glyphicon-remove:before{content:"\F622"}
+
+
+.cart_intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    
+        background: url("/images_menu/submidle.jpg")
+        center
+        repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+}
+
+
+.cart_title{
+    font-size: 95px;
+    max-width: 660px;
+     font-weight: 700;  
+     text-align: center; 
+     color: #ffc200;
+     line-height: 1.1;
+     font-family: 'Grand Hotel', cursive;
+     margin-top: -250px;
+     margin-left: 50px;
+     padding-bottom: 30px;
+     
+}
+
+.cart_inner{
+width: 100%;
+max-width: 800px;
+margin: 0 25% auto;
+color: #fff;
+font-family: 'Grand Hotel', cursive;
+}
+
+
+
+.table{
+    color: #ffc200;
+    border-width: 4px;
+    text-align: center;
+}
+
+
+.btn {
+    
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    font-size: 15;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #ffc200;
+    text-transform: uppercase;
+    border-radius:4px;
+    color: #303030;
+    transition: .1s linear;
+}
+
+.btn:hover {
+    background-color: #fce38a;
+}
