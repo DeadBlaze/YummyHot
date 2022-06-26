@@ -34,18 +34,9 @@ var app = (function($) {
         }, options);
 
     function init() {
-        if (page === 'catalog') {
-            catalog.init();
-            cart.init(optionsCatalog);
-        }
         if (page === 'catalogDB') {
             catalogDB.init();
             cart.init(optionsCatalog);
-            compare.init();
-        }
-        if (page === 'compare') {
-            cart.init(optionsCatalog);
-            compare.init();
         }
         if (page === 'cart') {
             cart.init(optionsCart);
@@ -54,7 +45,6 @@ var app = (function($) {
             order.init();
             cart.init(optionsOrder);
         }
-        compare.updateCompareTab();
     }
     
     return {

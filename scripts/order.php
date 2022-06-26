@@ -2,9 +2,9 @@
 
 // Объявляем нужные константы
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'root');
-define('DB_NAME', 'YHDB');
+define('DB_USER', 'p104819_root');
+define('DB_PASSWORD', 'rootYHDB25546000');
+define('DB_NAME', 'p104819_YHDB');
 
 define('EMAIL_ADMIN', 'czavava@mail.com');
 define('EMAIL_FROM_NAME', 'Ресторан Yummyhot');
@@ -147,6 +147,7 @@ try {
 
     // Добавляем товары в таблицу Детали
     addDetails($data, $conn);
+
 
     // Отправляем письмо
     sendEmailOrder($data);

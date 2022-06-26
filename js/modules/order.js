@@ -21,7 +21,7 @@ var order = (function($) {
 
     var freeDelivery = {
         enabled: false,
-        summa: 10000
+        summa: 1500
     };
 
     // Инициализация модуля
@@ -50,6 +50,7 @@ var order = (function($) {
             ui.$orderBtn.attr('disabled', 'disabled');
         }
     }
+
 
     // Меняем способ доставки
     function _changeDelivery() {
@@ -103,6 +104,8 @@ var order = (function($) {
         return isValid;
     }
 
+
+
     // Подготовка данных корзины к отправке заказа
     function _getCartData() {
         var cartData = cart.getData();
@@ -124,10 +127,12 @@ var order = (function($) {
         console.error('responce', responce);
         // Далее обработка ошибки, зависит от фантазии
     }
+    
 
     // Отправка завершилась
     function _orderComplete() {
         ui.$orderBtn.removeAttr('disabled').text('Отправить заказ');
+
     }
 
     // Оформляем заказ
@@ -135,6 +140,7 @@ var order = (function($) {
         var isValid,
             formData,
             cartData,
+      
             orderData;
         e.preventDefault();
         ui.$alertValidation.addClass('hidden');
@@ -145,6 +151,7 @@ var order = (function($) {
         }
         formData = ui.$orderForm.serialize();
         cartData = _getCartData();
+        
         orderData = formData + '&cart=' + JSON.stringify(cartData);
         ui.$orderBtn.attr('disabled', 'disabled').text('Идет отправка заказа...');
         $.ajax({

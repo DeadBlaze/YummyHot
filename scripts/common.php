@@ -2,9 +2,9 @@
 
 // Объявляем нужные константы
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'root');
-define('DB_NAME', 'YHDB');
+define('DB_USER', 'p104819_root');
+define('DB_PASSWORD', 'rootYHDB25546000');
+define('DB_NAME', 'p104819_YHDB');
 
 // Подключаемся к базе данных
 function connectDB() {
